@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28AD9B0615693BF400E1B706 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AD9B0515693BF400E1B706 /* Cocoa.framework */; };
+		28AD9B3315693D9700E1B706 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AD9B3215693D9700E1B706 /* QuartzCore.framework */; };
+		EAE560801E0799FF00DD3D63 /* NoiseFilter.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = EAE5607D1E0799FF00DD3D63 /* NoiseFilter.cikernel */; };
+		EAE560811E0799FF00DD3D63 /* NoiseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE5607F1E0799FF00DD3D63 /* NoiseFilter.m */; };
+		EAE560851E079A0D00DD3D63 /* BlurFilter.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = EAE560821E079A0D00DD3D63 /* BlurFilter.cikernel */; };
+		EAE560861E079A0D00DD3D63 /* BlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE560841E079A0D00DD3D63 /* BlurFilter.m */; };
+		EAE560891E079A2500DD3D63 /* BlurFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE560881E079A2500DD3D63 /* BlurFilterView.m */; };
+		EAE5608C1E079A3100DD3D63 /* NoiseFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE5608B1E079A3100DD3D63 /* NoiseFilterView.m */; };
+		EAE5608F1E079A4600DD3D63 /* CraterLake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAE5608D1E079A4600DD3D63 /* CraterLake.jpg */; };
+		EAE560901E079A4600DD3D63 /* displaceMap.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EAE5608E1E079A4600DD3D63 /* displaceMap.jpeg */; };
+		EAE560961E079A5700DD3D63 /* FilterSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAE560921E079A5700DD3D63 /* FilterSample-Info.plist */; };
+		EAE560971E079A5700DD3D63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE560941E079A5700DD3D63 /* main.m */; };
+		EAE5609C1E079B2B00DD3D63 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAE5609A1E079B2B00DD3D63 /* InfoPlist.strings */; };
+		EAE5609F1E079B5100DD3D63 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE5609D1E079B5100DD3D63 /* MainView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28AD9B0115693BF400E1B706 /* FilterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28AD9B0515693BF400E1B706 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		28AD9B0815693BF400E1B706 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		28AD9B0915693BF400E1B706 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		28AD9B0A15693BF400E1B706 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28AD9B3215693D9700E1B706 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAE5607D1E0799FF00DD3D63 /* NoiseFilter.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = NoiseFilter.cikernel; path = FilterSample/NoiseFilter.cikernel; sourceTree = "<group>"; };
+		EAE5607E1E0799FF00DD3D63 /* NoiseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoiseFilter.h; path = FilterSample/NoiseFilter.h; sourceTree = "<group>"; };
+		EAE5607F1E0799FF00DD3D63 /* NoiseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoiseFilter.m; path = FilterSample/NoiseFilter.m; sourceTree = "<group>"; };
+		EAE560821E079A0D00DD3D63 /* BlurFilter.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlurFilter.cikernel; path = FilterSample/BlurFilter.cikernel; sourceTree = "<group>"; };
+		EAE560831E079A0D00DD3D63 /* BlurFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurFilter.h; path = FilterSample/BlurFilter.h; sourceTree = "<group>"; };
+		EAE560841E079A0D00DD3D63 /* BlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurFilter.m; path = FilterSample/BlurFilter.m; sourceTree = "<group>"; };
+		EAE560871E079A2500DD3D63 /* BlurFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurFilterView.h; path = FilterSample/BlurFilterView.h; sourceTree = SOURCE_ROOT; };
+		EAE560881E079A2500DD3D63 /* BlurFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurFilterView.m; path = FilterSample/BlurFilterView.m; sourceTree = SOURCE_ROOT; };
+		EAE5608A1E079A3100DD3D63 /* NoiseFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoiseFilterView.h; path = FilterSample/NoiseFilterView.h; sourceTree = SOURCE_ROOT; };
+		EAE5608B1E079A3100DD3D63 /* NoiseFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoiseFilterView.m; path = FilterSample/NoiseFilterView.m; sourceTree = SOURCE_ROOT; };
+		EAE5608D1E079A4600DD3D63 /* CraterLake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CraterLake.jpg; path = FilterSample/CraterLake.jpg; sourceTree = SOURCE_ROOT; };
+		EAE5608E1E079A4600DD3D63 /* displaceMap.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = displaceMap.jpeg; path = FilterSample/displaceMap.jpeg; sourceTree = SOURCE_ROOT; };
+		EAE560921E079A5700DD3D63 /* FilterSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FilterSample-Info.plist"; path = "FilterSample/FilterSample-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EAE560931E079A5700DD3D63 /* FilterSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FilterSample-Prefix.pch"; path = "FilterSample/FilterSample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		EAE560941E079A5700DD3D63 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FilterSample/main.m; sourceTree = SOURCE_ROOT; };
+		EAE5609B1E079B2B00DD3D63 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FilterSample/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		EAE5609E1E079B5100DD3D63 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = FilterSample/en.lproj/MainView.xib; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28AD9AFE15693BF400E1B706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD9B3315693D9700E1B706 /* QuartzCore.framework in Frameworks */,
+				28AD9B0615693BF400E1B706 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28AD9AF615693BF400E1B706 = {
+			isa = PBXGroup;
+			children = (
+				EAE413471DE7B91200A9C46C /* NoiseFilter */,
+				EA17DE321DE7865600CF228B /* BlurFilter */,
+				28AD9B0B15693BF400E1B706 /* FilterSample */,
+				28AD9B0415693BF400E1B706 /* Frameworks */,
+				28AD9B0215693BF400E1B706 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28AD9B0215693BF400E1B706 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28AD9B0115693BF400E1B706 /* FilterSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28AD9B0415693BF400E1B706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28AD9B3215693D9700E1B706 /* QuartzCore.framework */,
+				28AD9B0515693BF400E1B706 /* Cocoa.framework */,
+				28AD9B0715693BF400E1B706 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28AD9B0715693BF400E1B706 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28AD9B0815693BF400E1B706 /* AppKit.framework */,
+				28AD9B0915693BF400E1B706 /* CoreData.framework */,
+				28AD9B0A15693BF400E1B706 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		28AD9B0B15693BF400E1B706 /* FilterSample */ = {
+			isa = PBXGroup;
+			children = (
+				EAE5609D1E079B5100DD3D63 /* MainView.xib */,
+				EAE560871E079A2500DD3D63 /* BlurFilterView.h */,
+				EAE560881E079A2500DD3D63 /* BlurFilterView.m */,
+				EAE5608A1E079A3100DD3D63 /* NoiseFilterView.h */,
+				EAE5608B1E079A3100DD3D63 /* NoiseFilterView.m */,
+				28AD9B3115693D5900E1B706 /* Resources */,
+				28AD9B0C15693BF400E1B706 /* Supporting Files */,
+			);
+			name = FilterSample;
+			path = CIHazeFilterSample;
+			sourceTree = "<group>";
+		};
+		28AD9B0C15693BF400E1B706 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAE5609A1E079B2B00DD3D63 /* InfoPlist.strings */,
+				EAE560921E079A5700DD3D63 /* FilterSample-Info.plist */,
+				EAE560931E079A5700DD3D63 /* FilterSample-Prefix.pch */,
+				EAE560941E079A5700DD3D63 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28AD9B3115693D5900E1B706 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EAE5608D1E079A4600DD3D63 /* CraterLake.jpg */,
+				EAE5608E1E079A4600DD3D63 /* displaceMap.jpeg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA17DE321DE7865600CF228B /* BlurFilter */ = {
+			isa = PBXGroup;
+			children = (
+				EAE560821E079A0D00DD3D63 /* BlurFilter.cikernel */,
+				EAE560831E079A0D00DD3D63 /* BlurFilter.h */,
+				EAE560841E079A0D00DD3D63 /* BlurFilter.m */,
+			);
+			name = BlurFilter;
+			sourceTree = "<group>";
+		};
+		EAE413471DE7B91200A9C46C /* NoiseFilter */ = {
+			isa = PBXGroup;
+			children = (
+				EAE5607D1E0799FF00DD3D63 /* NoiseFilter.cikernel */,
+				EAE5607E1E0799FF00DD3D63 /* NoiseFilter.h */,
+				EAE5607F1E0799FF00DD3D63 /* NoiseFilter.m */,
+			);
+			name = NoiseFilter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28AD9B0015693BF400E1B706 /* FilterSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28AD9B1F15693BF400E1B706 /* Build configuration list for PBXNativeTarget "FilterSample" */;
+			buildPhases = (
+				28AD9AFD15693BF400E1B706 /* Sources */,
+				28AD9AFE15693BF400E1B706 /* Frameworks */,
+				28AD9AFF15693BF400E1B706 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilterSample;
+			productName = CIHazeFilterSample;
+			productReference = 28AD9B0115693BF400E1B706 /* FilterSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28AD9AF815693BF400E1B706 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 28AD9AFB15693BF400E1B706 /* Build configuration list for PBXProject "FilterSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28AD9AF615693BF400E1B706;
+			productRefGroup = 28AD9B0215693BF400E1B706 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28AD9B0015693BF400E1B706 /* FilterSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28AD9AFF15693BF400E1B706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE560801E0799FF00DD3D63 /* NoiseFilter.cikernel in Resources */,
+				EAE5609C1E079B2B00DD3D63 /* InfoPlist.strings in Resources */,
+				EAE560961E079A5700DD3D63 /* FilterSample-Info.plist in Resources */,
+				EAE5608F1E079A4600DD3D63 /* CraterLake.jpg in Resources */,
+				EAE560851E079A0D00DD3D63 /* BlurFilter.cikernel in Resources */,
+				EAE5609F1E079B5100DD3D63 /* MainView.xib in Resources */,
+				EAE560901E079A4600DD3D63 /* displaceMap.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28AD9AFD15693BF400E1B706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE560811E0799FF00DD3D63 /* NoiseFilter.m in Sources */,
+				EAE560861E079A0D00DD3D63 /* BlurFilter.m in Sources */,
+				EAE560891E079A2500DD3D63 /* BlurFilterView.m in Sources */,
+				EAE560971E079A5700DD3D63 /* main.m in Sources */,
+				EAE5608C1E079A3100DD3D63 /* NoiseFilterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAE5609A1E079B2B00DD3D63 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE5609B1E079B2B00DD3D63 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAE5609D1E079B5100DD3D63 /* MainView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAE5609E1E079B5100DD3D63 /* en */,
+			);
+			name = MainView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28AD9B1D15693BF400E1B706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		28AD9B1E15693BF400E1B706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		28AD9B2015693BF400E1B706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilterSample/FilterSample-Prefix.pch";
+				INFOPLIST_FILE = "FilterSample/FilterSample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.FilterSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28AD9B2115693BF400E1B706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilterSample/FilterSample-Prefix.pch";
+				INFOPLIST_FILE = "FilterSample/FilterSample-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.FilterSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28AD9AFB15693BF400E1B706 /* Build configuration list for PBXProject "FilterSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AD9B1D15693BF400E1B706 /* Debug */,
+				28AD9B1E15693BF400E1B706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AD9B1F15693BF400E1B706 /* Build configuration list for PBXNativeTarget "FilterSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28AD9B2015693BF400E1B706 /* Debug */,
+				28AD9B2115693BF400E1B706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28AD9AF815693BF400E1B706 /* Project object */;
+}

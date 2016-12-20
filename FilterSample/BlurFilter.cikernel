@@ -1,0 +1,18 @@
+kernel vec4 myTestKernel(sampler image, float numSamplesInput) {// 1
+
+vec2 velocity = vec2(0.0);
+int numSamples = int(floor(numSamplesInput));
+vec4 sum = vec4(0.0), avg = vec4(0.0);
+vec2 dc = destCoord(), offset = -velocity;                                 // 2
+
+for (int i=0; i < (numSamples * 2 + 1); i++) {
+sum += sample (image, samplerTransform (image, dc + vec2(i)));
+offset += velocity / float(numSamples);
+}
+
+avg = sum / float((numSamples * 2 + 1));                                   // 4
+return avg;
+}
+
+
+

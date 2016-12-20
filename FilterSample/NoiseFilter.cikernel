@@ -1,0 +1,12 @@
+kernel vec4 displace(sampler source, sampler map, float scaleX, float scaleY)
+{
+
+vec2 d = destCoord();
+vec4 mapPixel = sample(map, samplerTransform(map, d));
+float shiftX = ((mapPixel.x * 2.0) - 1.0) * scaleX;
+float shiftY = ((mapPixel.y * 2.0) - 1.0) * scaleY;
+
+vec2 s = samplerTransform(source, d + vec2(shiftX, shiftY));
+
+return sample(source, s);
+}
